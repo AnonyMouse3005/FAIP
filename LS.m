@@ -1,8 +1,8 @@
 % Implementation of Local Search Algorithm for k-median w/ penalties
 function G = LS(A, s, k, N, p, delta)
-% output: resultant graph G after adding k edges
+% output: resultant network G after adding k edges
 arguments
-    A (:,:) double  % adj matrix (sparse) for unweighted, undirected graph
+    A (:,:) double  % adj matrix (sparse) for unweighted, undirected network
     s (1,1) double  % source node
     k (1,1) double  % k number of edges to be added
     N (1,:) double  % node subgroup

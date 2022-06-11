@@ -1,5 +1,5 @@
-function tnse = calcTNSE(G, s, x)
+function tnse = calcTNSE(G, s, N)
 
-tnse = sum(distances(G, s, x));
+tnse = sum(distances(G, s, N));
 
 end

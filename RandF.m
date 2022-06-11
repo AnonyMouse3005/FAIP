@@ -3,7 +3,7 @@ function u = RandF(A, s, k, N, w, replace, nrep)
 % output: matrix u containing candidate nodes to be connected to s, sorted by order of adding,
 % each row is one run
 arguments
-    A (:,:) double  % adj matrix (sparse) for connected, undirected graph
+    A (:,:) double  % adj matrix (sparse) for connected, undirected network
     s (1,1) double  % source node
     k (1,1) double  % k edges to be added
     N (1,:) double  % node subgroup
@@ -17,11 +17,10 @@ if k > length(N)
     k = length(N);
 end
 
-u = zeros(nrep, k);  % list of centers
+u = zeros(nrep, k);
 G = graph(A);
 N = sort(N);
-D = distances(G,s,N);  % distance from s to all agents in x
-% rstream = RandStream('mlfg6331_64');
+D = distances(G,s,N);  % distance from s to all nodes in N
 
 if replace  % sampling w/ replacement
     if w  % sample with weighted probabilities
@@ -36,7 +35,7 @@ if replace  % sampling w/ replacement
         end
     end
 else  % sampling w/o replacement
-    if w  % sample with weighted probabilities
+    if w  % sample with weighted probabilities (NOT USED IN PAPER)
         for r = 1:nrep
             % Note: randsampleFS also selects those with 0 weights (after
             % all agents w/ positive weights have been selected)

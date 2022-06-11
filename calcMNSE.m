@@ -1,5 +1,5 @@
-function mnse = calcMNSE(G,s,x)
+function mnse = calcMNSE(G,s,N)
 
-mnse = max(distances(G, s, x));
+mnse = max(distances(G, s, N));
 
 end

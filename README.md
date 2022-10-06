@@ -9,7 +9,7 @@ This repo contains MATLAB source codes implemented for all proposed algorithms a
 - `FFT.m`: Farthest-First Traversal.
 - `k_Im.m`: Highest $k$ Importance. Additionally requires specifying the name of a centrality measure ("random", "highdegree", "lowdegree", "betweenness", "pagerank", "eigenvector", "clusteringcoefficient", "closeness", "eccentricity").
 - `RandF.m`: Randomized Framework. Optionally specify `w`, `replace` , `nrep` parameters to run sampling with weighted probabilities or uniformly, with or without replacement, and with how many number of runs (more details in documentation).
-- `LS.m`: Local Search Algorithm in [5]. `p` and `delta` parameters to specify the number of edges to be swapped in each iteration and the quality of the solution.
+- `LS.m`: Local Search Algorithm in [5]. `q` and `delta` parameters to specify the number of edges to be swapped in each iteration and the quality of the solution.
 - `LP.m`: Linear Programming Algorithm in [3].
 - `alg_berman_1992.m`: First heuristics in page 12 of [2].
 - `alg5_berman_1994.m`: Algorithm 5 in [1]. `zcprime` parameter to intialize a target MNSE of choice.

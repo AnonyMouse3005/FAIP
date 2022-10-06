@@ -1,6 +1,6 @@
 # node-subgroup-eccentricity
 
-This repo contains MATLAB source code implemented for all proposed algorithms and benchmarks for the problem of optimizing node subgroup eccentricity, along with datasets and all figures from the experiments.
+This repo contains MATLAB source codes implemented for all proposed algorithms and benchmarks for the problem of optimizing node subgroup eccentricity, along with datasets and all figures from the experiments.
 
 
 ### Algorithms
@@ -24,6 +24,8 @@ This repo contains MATLAB source code implemented for all proposed algorithms an
 - `datasets/dt_oregon.mat`: AS peering networks, available at [4].
 - `datasets/p2p_connected.mat`: Internet peer-to-peer networks, available at [4].
 - `datasets/social_small.mat`: Small social networks, available at [6].
+- `datasets/erdos_renyi_200.mat`: Small Erdos-Renyi random networks (200 nodes).
+- `datasets/erdos_renyi_3000.mat`: Large Erdos-Renyi random networks (3000 nodes).
 
 <br/><br/>
 

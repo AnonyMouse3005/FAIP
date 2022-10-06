@@ -52,4 +52,4 @@ cn = diag(graph*triu(graph)*graph); %Number of triangles for each node
 
 %The local clustering coefficient of each node
 c = zeros(size(deg));
-c(deg > 1) = 2 * cn(deg > 1) ./ (deg(deg > 1).*(deg(deg > 1) - 1));  
+c(deg > 1) = 2 * cn(deg > 1) ./ (deg(deg > 1).*(deg(deg > 1) - 1));

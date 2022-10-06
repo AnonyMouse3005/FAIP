@@ -5,7 +5,7 @@ This repo contains MATLAB source codes implemented for all proposed algorithms a
 
 ### Algorithms
 
-(all take sparse adjacency matrix `A` of network $G=(V,E)$, source node `s`, number of edges to add `k`, and subgroup `N`$\in V$ as inputs)
+(all take sparse adjacency matrix `A` of network $G=(V,E)$, source node `s`, number of edges to add `k`, and subgroup `N`$\subseteq V$ as inputs)
 - `FFT.m`: Farthest-First Traversal.
 - `k_Im.m`: Highest $k$ Importance. Additionally requires specifying the name of a centrality measure ("random", "highdegree", "lowdegree", "betweenness", "pagerank", "eigenvector", "clusteringcoefficient", "closeness", "eccentricity").
 - `RandF.m`: Randomized Framework. Optionally specify `w`, `replace` , `nrep` parameters to run sampling with weighted probabilities or uniformly, with or without replacement, and with how many number of runs (more details in documentation).

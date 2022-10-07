@@ -18,7 +18,7 @@ This repo contains MATLAB source codes implemented for all proposed algorithms a
 ### Helper functions
 - `calcMNSE.m`: Compute maximum node subgroup eccentricity of a network `G` (graph object) with source `s` and subgroup `N`.
 - `calcTNSE.m`: Compute total node subgroup eccentricity of a network `G` (graph object) with source `s` and subgroup `N`.
-- `lib/ClusteringCoefficient.m`: Compute (local) clustering coefficient of network $G$, adopted from [URL](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/45734/versions/1/previews/cnm/avgClusteringCoefficient.m/index.html).
+- `lib/ClusteringCoefficient.m`: Compute (local) clustering coefficient of network $G$, adapted from [URL](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/45734/versions/1/previews/cnm/avgClusteringCoefficient.m/index.html).
 
 ### Datasets
 - `datasets/dt_oregon.mat`: AS peering networks, available at [4].

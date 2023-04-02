@@ -1,5 +1,5 @@
 % Implementation of Charikar's LP-based algorithm for k-median w/ penalties
-function G = LP_Charikar(A, s, k, N)
+function G = LP(A, s, k, N)
 % output: resultant network G after adding k edges
 arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network

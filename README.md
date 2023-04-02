@@ -1,6 +1,6 @@
-# node-subgroup-eccentricity
+# FAIP
 
-This repo contains MATLAB source codes implemented for all proposed algorithms and benchmarks for the problem of optimizing node subgroup eccentricity, along with datasets and all figures from the experiments.
+This repo contains MATLAB source codes implemented for all proposed algorithms and benchmarks for facility accessibility improvement problems (FAIPs), along with datasets and all resulting figures from the experiments.
 
 
 ### Algorithms
@@ -10,14 +10,14 @@ This repo contains MATLAB source codes implemented for all proposed algorithms a
 - `k_Im.m`: Highest $k$ Importance. Additionally requires specifying the name of a centrality measure ("random", "highdegree", "lowdegree", "betweenness", "pagerank", "eigenvector", "clusteringcoefficient", "closeness", "eccentricity").
 - `RandF.m`: Randomized Framework. Optionally specify `w`, `replace` , `nrep` parameters to run sampling with weighted probabilities or uniformly, with or without replacement, and with how many number of runs (more details in documentation).
 - `LS.m`: Local Search Algorithm in [5]. `q` and `delta` parameters to specify the number of edges to be swapped in each iteration and the quality of the solution.
-- `LP.m`: Linear Programming Algorithm in [3].
+- `LP.m`: Linear Programming-based Algorithm using primal-dual schema in [3].
 - `alg_berman_1992.m`: First heuristics in page 12 of [2].
 - `alg5_berman_1994.m`: Algorithm 5 in [1]. `zcprime` parameter to intialize a target MNSE of choice.
 - `alg6_berman_1994.m`: Algorithm 6 in [1].
 
 ### Helper functions
-- `calcMNSE.m`: Compute maximum node subgroup eccentricity of a network `G` (graph object) with source `s` and subgroup `N`.
-- `calcTNSE.m`: Compute total node subgroup eccentricity of a network `G` (graph object) with source `s` and subgroup `N`.
+- `calcMAC.m`: Compute maximum accessibility cost of a network `G` (graph object) with source `s` and subgroup `N`.
+- `calcTAC.m`: Compute total accessibility cost of a network `G` (graph object) with source `s` and subgroup `N`.
 - `lib/ClusteringCoefficient.m`: Compute (local) clustering coefficient of network $G$, adapted from [URL](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/45734/versions/1/previews/cnm/avgClusteringCoefficient.m/index.html).
 
 ### Datasets

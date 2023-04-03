@@ -3,9 +3,9 @@ function G = FFT(A, s, k, N)
 % output: resultant network G after adding k edges
 arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network
-    s (1,1) double  % source node
+    s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % node subgroup; when N = V, we have FFT_V
+    N (1,:) double  % set of clients; when N = V, we have FFT_V
 end
 
 u = zeros(1, k);

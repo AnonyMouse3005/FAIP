@@ -3,9 +3,9 @@ function G = LS(A, s, k, N, q, delta)
 % output: resultant network G after adding k edges
 arguments
     A (:,:) double  % adj matrix (sparse) for unweighted, undirected network
-    s (1,1) double  % source node
+    s (1,1) double  % pre-located facility
     k (1,1) double  % k number of edges to be added
-    N (1,:) double  % node subgroup
+    N (1,:) double  % set of clients
     q (1,1) double = 1  % number of edges to be swapped in each iteration
     delta (1,1) double = 0.95  % between 0 and 1, the closer to 1 the better the approximation
 end

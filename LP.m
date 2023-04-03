@@ -3,9 +3,9 @@ function G = LP(A, s, k, N)
 % output: resultant network G after adding k edges
 arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network
-    s (1,1) double  % source node
-    k (1,1) double  % k facilities to open/k edges to be added
-    N (1,:) double  % node subgroup i.e., clients
+    s (1,1) double  % pre-located facility
+    k (1,1) double  % k extra facilities to open/k edges to be added
+    N (1,:) double  % set of clients
 end
 
 G = graph(logical(A));

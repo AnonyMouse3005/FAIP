@@ -3,9 +3,9 @@ function G = k_Im(A, s, k, N, m)
 % output: resultant network G after adding k edges
 arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network
-    s (1,1) double  % source node
+    s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % node subgroup; when N = V, we have k-Im_V
+    N (1,:) double  % set of clients; when N = V, we have k-Im_V
     m (1,1) string  % a string in ["random", "highdegree", "lowdegree",...
 %         "betweenness", "pagerank", "eigenvector",...
 %         "clusteringcoefficient", "closeness", "eccentricity"]

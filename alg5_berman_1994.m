@@ -3,9 +3,9 @@ function [G, E] = alg_berman_mc1(A, s, k, N, zcprime)
 % output: graph G' with (<=k) added edges
 arguments
     A (:,:) double  % adj matrix for connected, undirected graph
-    s (1,1) double  % s source node
+    s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % set of agents
+    N (1,:) double  % set of clients
     zcprime (1,1) double = 5  % initial target max cost
 end
 

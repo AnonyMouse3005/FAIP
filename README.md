@@ -5,7 +5,7 @@ This repo contains MATLAB source codes implemented for all proposed algorithms a
 
 ### Algorithms
 
-(all take sparse adjacency matrix `A` of network $G=(V,E)$, source node `s`, number of edges to add `k`, and subgroup `N`$\subseteq V$ as inputs)
+(all take sparse adjacency matrix `A` of network $G=(V,E)$, source node `s`, number of edges to add `k`, and set of clients `N`$\subseteq V$ as inputs)
 - `FFT.m`: Farthest-First Traversal.
 - `k_Im.m`: Highest $k$ Importance. Additionally requires specifying the name of a centrality measure ("random", "highdegree", "lowdegree", "betweenness", "pagerank", "eigenvector", "clusteringcoefficient", "closeness", "eccentricity").
 - `RandF.m`: Randomized Framework. Optionally specify `w`, `replace` , `nrep` parameters to run sampling with weighted probabilities or uniformly, with or without replacement, and with how many number of runs (more details in documentation).
@@ -16,8 +16,8 @@ This repo contains MATLAB source codes implemented for all proposed algorithms a
 - `alg6_berman_1994.m`: Algorithm 6 in [1].
 
 ### Helper functions
-- `calcMAC.m`: Compute maximum accessibility cost of a network `G` (graph object) with source `s` and subgroup `N`.
-- `calcTAC.m`: Compute total accessibility cost of a network `G` (graph object) with source `s` and subgroup `N`.
+- `calcMAC.m`: Compute maximum accessibility cost of a network `G` (graph object) with source `s` and set of clients `N`.
+- `calcTAC.m`: Compute total accessibility cost of a network `G` (graph object) with source `s` and set of clients `N`.
 - `lib/ClusteringCoefficient.m`: Compute (local) clustering coefficient of network $G$, adapted from [URL](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/45734/versions/1/previews/cnm/avgClusteringCoefficient.m/index.html).
 
 ### Datasets

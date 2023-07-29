@@ -31,9 +31,9 @@ while 1
         for j = 1:size(u2_comb,1)
             u2 = udiff(u2_comb(j));  % subset of udiff of size q
             utemp = [setdiff(u, u1), u2];  % [(E'-E1) \cup E2]
-            TNSEtemp = calcTNSE(addedge(G, ones(1,length(utemp))*s, utemp), s, N);
-            TNSEprime = calcTNSE(addedge(G, ones(1,length(u))*s, u), s, N);
-            if TNSEtemp <= delta*TNSEprime  % larger delta (up to 1), slower run, better approx
+            TACtemp = calcTAC(addedge(G, ones(1,length(utemp))*s, utemp), s, N);
+            TACprime = calcTAC(addedge(G, ones(1,length(u))*s, u), s, N);
+            if TACtemp <= delta*TACprime  % larger delta (up to 1), slower run, better approx
                 better = 1;
                 break;
             end

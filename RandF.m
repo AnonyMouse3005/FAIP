@@ -6,7 +6,7 @@ arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network
     s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % set of clients
+    N (1,:) double  % set of agents
     w (1,1) double = 1  % sampling with weighted probs proportional to agents' relative distances from s (1) or uniformly (0)
     replace (1,1) double = 0  % sampling with (1) or without (0) replacement
     nrep (1,1) double = 10  % number of runs

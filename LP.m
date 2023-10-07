@@ -5,7 +5,7 @@ arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network
     s (1,1) double  % pre-located facility
     k (1,1) double  % k extra facilities to open/k edges to be added
-    N (1,:) double  % set of clients
+    N (1,:) double  % set of agents
 end
 
 G = graph(logical(A));

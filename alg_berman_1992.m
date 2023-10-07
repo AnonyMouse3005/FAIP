@@ -1,11 +1,11 @@
 % First heuristic from page 12 of Berman (1992)
-function [G, E] = alg_berman_sc(A, s, k, N)
+function [G, E] = alg_berman_1992(A, s, k, N)
 % output: graph G' with k added edges
 arguments
     A (:,:) double  % adj matrix for connected, undirected graph
     s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % set of clients
+    N (1,:) double  % set of agents
 end
 
 E = zeros(k, 2);  % list of edges to add

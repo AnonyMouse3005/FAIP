@@ -5,7 +5,7 @@ arguments
     A (:,:) double  % adj matrix (sparse) for connected, undirected network
     s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % set of clients; when N = V, we have FFT_V
+    N (1,:) double  % set of agents; when N = V, we have FFT_V
 end
 
 u = zeros(1, k);

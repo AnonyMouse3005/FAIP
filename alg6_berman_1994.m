@@ -1,11 +1,11 @@
 % Algorithm 6 of Berman (1994)
-function [G, E] = alg_berman_mc2(A, s, k, N)
+function [G, E] = alg6_berman_1994(A, s, k, N)
 % output: graph G' with (<=k) added edges
 arguments
     A (:,:) double  % adj matrix for connected, undirected graph
     s (1,1) double  % pre-located facility
     k (1,1) double  % k edges to be added
-    N (1,:) double  % set of clients
+    N (1,:) double  % set of agents
 end
 
 E = zeros(k, 2);  % list of edges to add

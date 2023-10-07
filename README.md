@@ -1,6 +1,6 @@
 # FAIP
 
-This repo contains MATLAB source codes implemented for all proposed methods and benchmarks for facility accessibility improvement problems (FAIPs) and its strategic aspects, along with datasets and all resulting figures from the experiments.
+This repo contains MATLAB source codes implemented for all proposed methods and benchmarks for facility accessibility improvement problems (FAIPs) and its strategic aspects, along with the dataset used in the experiments.
 
 
 ### Methods

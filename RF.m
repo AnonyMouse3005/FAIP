@@ -1,5 +1,5 @@
-% Implementation of R-Prop and R-Uniform
-function u = RandF(A, s, k, N, w, replace, nrep)
+% Implementation of Randomized Framework: RF-Prop and RF-Uniform
+function u = RF(A, s, k, N, w, replace, nrep)
 % output: matrix u containing candidate nodes to be connected to s, sorted by order of adding,
 % each row is one run
 arguments
@@ -9,7 +9,7 @@ arguments
     N (1,:) double  % set of agents
     w (1,1) double = 1  % sampling with weighted probs proportional to agents' relative distances from s (1) or uniformly (0)
     replace (1,1) double = 0  % sampling with (1) or without (0) replacement
-    nrep (1,1) double = 10  % number of runs
+    nrep (1,1) double = 100  % number of runs
 end
 
 if k > length(N)

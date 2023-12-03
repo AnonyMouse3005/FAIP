@@ -19,7 +19,7 @@ while i <= k
     u(i) = N(idx);
     d = distances(G,u(i),N);
     for j = 1:length(N)
-        D(j) = min(D(j), d(j));
+        D(j) = min(D(j), d(j)+1);
     end
     i = i+1;
 end
